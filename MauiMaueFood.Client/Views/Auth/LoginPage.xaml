@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MauiMaueFood.Client.ViewModels.Auth"
+             x:DataType="viewmodel:LoginViewModel"
+             x:Class="MauiMaueFood.Client.Views.Auth.LoginPage">
+    
+    <ScrollView>
+        <VerticalStackLayout Margin="20">
+            <Image Source="logo.png" HeightRequest="80"/>
+
+            <VerticalStackLayout Margin="0,60">
+                <Label FontSize="32"
+                       HorizontalTextAlignment="Center"
+                       Text="Bem Vindo"/>
+                <Label TextColor="{StaticResource Secondary}" 
+                       FontSize="16"
+                       HorizontalTextAlignment="Center"
+                       Text="Efetue login para continuar"/>
+            </VerticalStackLayout>
+
+            <VerticalStackLayout>
+                <Label TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Username"/>
+                <Grid Margin="0,8">
+                    <Frame Opacity="1" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Username" 
+                           TextColor="White" Margin="1,0"
+                           Opacity="0.5"
+                           PlaceholderColor="Gray"/>                   
+                </Grid>
+
+                <Label TextColor="{StaticResource Primary}" 
+                       FontSize="16" Text="Password"/>
+                <Grid Margin="0,5">
+                    <Frame Opacity="1" BackgroundColor="White" CornerRadius="5"/>
+                    <Entry BackgroundColor="Transparent" Placeholder="Password" 
+                           TextColor="White" Margin="1,0"
+                           Opacity="0.5"
+                           IsPassword="True"
+                           PlaceholderColor="Gray"/>
+
+                </Grid>
+            </VerticalStackLayout>
+            
+            <Grid ColumnDefinitions="*,*"
+                  ColumnSpacing="2"
+                  RowDefinitions="*"
+                  RowSpacing="0"
+                  Margin="0,5">
+
+                <Label TextColor="{StaticResource Secondary}" HorizontalOptions="FillAndExpand" Grid.Column="0"
+                       FontSize="16" Text="Esqueceu a senha?"/>
+
+                <Label TextColor="{StaticResource Secondary}" HorizontalOptions="End" Grid.Column="1"
+                       Margin="0,0,0,0"
+                       FontSize="16" Text="Registrar"/>
+            </Grid>
+
+            <Button Margin="100,50,100,20" BackgroundColor="{StaticResource Secondary}"
+                    Text="Entrar" TextColor="{StaticResource Primary}" FontFamily="OpenSansBold"/>
+
+        </VerticalStackLayout>
+        </ScrollView>
+    
+</ContentPage>

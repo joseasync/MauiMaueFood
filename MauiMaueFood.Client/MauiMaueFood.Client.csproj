@@ -45,4 +45,26 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Remove="ViewModels\" />
+	  <None Remove="Views\" />
+	  <None Remove="Services\" />
+	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Views\Auth\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="ViewModels\" />
+	  <Folder Include="Views\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="Views\Auth" />
+	  <Folder Include="Views\Auth\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiXaml Update="Views\Auth\LoginPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	</ItemGroup>
 </Project>
