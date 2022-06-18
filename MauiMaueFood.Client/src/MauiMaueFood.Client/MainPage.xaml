@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodel="clr-namespace:MauiMaueFood.Client.ViewModels"
+             x:DataType="viewmodel:MainViewModel"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="MauiMaueFood.Client.MainPage">
+			 
+    <ScrollView>
+        <VerticalStackLayout 
+            Spacing="25" 
+            Padding="30,0" 
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+               
+                    <Label 
+                Text="Assine o Canal :)"
+                FontSize="28"
+                TextColor="Red"
+                IsEnabled="False"
+                HorizontalOptions="Center" />
+                        
+            <ActivityIndicator IsVisible="{Binding IsBusy}"
+                               IsRunning="{Binding IsBusy}"
+                               HorizontalOptions="FillAndExpand"
+                               VerticalOptions="CenterAndExpand" />
+                <Label 
+                Text="Token:"
+                SemanticProperties.HeadingLevel="Level2"
+                FontSize="18"
+                HorizontalOptions="Start" />   
+                
+                <Label 
+                    Text="{Binding Token}"
+                    TextColor="{StaticResource Primary}"
+                    FontSize="10"
+                    HorizontalOptions="Center" />   
+
+            <Button Margin="100,20,100,20" 
+                    HorizontalOptions="Center"
+                    Command="{Binding CallApiCommand}"
+                    BackgroundColor="{StaticResource Secondary}"
+                    Text="Chamar API" TextColor="{StaticResource Primary}"/>
+            
+            <Button Margin="100,20,100,20" 
+                    HorizontalOptions="Center"
+                    Command="{Binding LogoutCommand}"
+                    BackgroundColor="{StaticResource Secondary}"
+                    Text="Sair" TextColor="{StaticResource Primary}"/>
+        </VerticalStackLayout>
+    </ScrollView>
+    
+ 
+</ContentPage>
+

@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5785BCC1-F0D8-4F39-9570-50F2C5F9276C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMaueBE.IdentityServer", "src\MauiMaueBE.IdentityServer\MauiMaueBE.IdentityServer.csproj", "{D0E94941-A662-4CF1-9294-EFF52622F0FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMaueBE.Api", "src\MauiMaueBE.Api\MauiMaueBE.Api.csproj", "{89084227-5898-4D57-A6DC-2A4A0B943D90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMaueBE.ClientTest", "src\MauiMaueBE.ClientTest\MauiMaueBE.ClientTest.csproj", "{3D328AE1-38F9-474C-87A4-E4E675DA1603}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MauiMaueBE.IdentityManagerWeb", "src\MauiMaueBE.IdentityManagerWeb\MauiMaueBE.IdentityManagerWeb.csproj", "{5031B780-21EE-47E1-A30F-3613A26817C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D0E94941-A662-4CF1-9294-EFF52622F0FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0E94941-A662-4CF1-9294-EFF52622F0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0E94941-A662-4CF1-9294-EFF52622F0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0E94941-A662-4CF1-9294-EFF52622F0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89084227-5898-4D57-A6DC-2A4A0B943D90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89084227-5898-4D57-A6DC-2A4A0B943D90}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89084227-5898-4D57-A6DC-2A4A0B943D90}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89084227-5898-4D57-A6DC-2A4A0B943D90}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D328AE1-38F9-474C-87A4-E4E675DA1603}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D328AE1-38F9-474C-87A4-E4E675DA1603}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D328AE1-38F9-474C-87A4-E4E675DA1603}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D328AE1-38F9-474C-87A4-E4E675DA1603}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5031B780-21EE-47E1-A30F-3613A26817C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5031B780-21EE-47E1-A30F-3613A26817C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5031B780-21EE-47E1-A30F-3613A26817C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5031B780-21EE-47E1-A30F-3613A26817C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D0E94941-A662-4CF1-9294-EFF52622F0FF} = {5785BCC1-F0D8-4F39-9570-50F2C5F9276C}
+		{89084227-5898-4D57-A6DC-2A4A0B943D90} = {5785BCC1-F0D8-4F39-9570-50F2C5F9276C}
+		{3D328AE1-38F9-474C-87A4-E4E675DA1603} = {5785BCC1-F0D8-4F39-9570-50F2C5F9276C}
+		{5031B780-21EE-47E1-A30F-3613A26817C3} = {5785BCC1-F0D8-4F39-9570-50F2C5F9276C}
+	EndGlobalSection
+EndGlobal
