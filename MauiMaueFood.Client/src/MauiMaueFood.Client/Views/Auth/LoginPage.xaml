@@ -18,49 +18,6 @@
                        HorizontalTextAlignment="Center"
                        Text="Efetue login para continuar"/>
             </VerticalStackLayout>
-
-            <!-- Firebase Video ;)    -->
-            <!--    <Label Margin="0,5"  -->
-            <!--     HorizontalOptions="Center" TextColor="{StaticResource Primary}"  -->
-            <!--            FontSize="20" Text="Login via firebase"/> -->
-            <!-- -->
-            <!-- <VerticalStackLayout Opacity="0.1"> -->
-            <!--     <Label TextColor="{StaticResource Primary}"  -->
-            <!--            FontSize="16" Text="Username"/> -->
-            <!--     <Grid Margin="0,8"> -->
-            <!--         <Frame Opacity="1" BackgroundColor="White" CornerRadius="5"/> -->
-            <!--         <Entry BackgroundColor="Transparent" Placeholder="Username"  -->
-            <!--                TextColor="White" Margin="1,0" -->
-            <!--                Opacity="0.5" -->
-            <!--                PlaceholderColor="Gray"/>                    -->
-            <!--     </Grid> -->
-            <!-- -->
-            <!--     <Label TextColor="{StaticResource Primary}"  -->
-            <!--            FontSize="16" Text="Password"/> -->
-            <!--     <Grid Margin="0,5"> -->
-            <!--         <Frame Opacity="1" BackgroundColor="White" CornerRadius="5"/> -->
-            <!--         <Entry BackgroundColor="Transparent" Placeholder="Password"  -->
-            <!--                TextColor="White" Margin="1,0" -->
-            <!--                Opacity="0.5" -->
-            <!--                IsPassword="True" -->
-            <!--                PlaceholderColor="Gray"/> -->
-            <!-- -->
-            <!--     </Grid> -->
-            <!-- </VerticalStackLayout> -->
-            <!-- -->
-            <!-- <Grid ColumnDefinitions="*,*" -->
-            <!--       ColumnSpacing="2" -->
-            <!--       RowDefinitions="*" -->
-            <!--       RowSpacing="0" -->
-            <!--       Margin="0,5"> -->
-            <!-- -->
-            <!--     <Label TextColor="{StaticResource Secondary}" HorizontalOptions="FillAndExpand" Grid.Column="0" -->
-            <!--            FontSize="16" Text="Esqueceu a senha?"/> -->
-            <!-- -->
-            <!--     <Label TextColor="{StaticResource Secondary}" HorizontalOptions="End" Grid.Column="1" -->
-            <!--            Margin="0,0,0,0" -->
-            <!--            FontSize="16" Text="Registrar"/> -->
-            <!-- </Grid> -->
             
             <Label Margin="10,20,10,20" 
                 HorizontalOptions="Center" TextColor="{StaticResource Primary}" 

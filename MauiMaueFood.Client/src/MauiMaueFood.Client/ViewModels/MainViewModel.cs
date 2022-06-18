@@ -51,7 +51,6 @@ public partial class MainViewModel : ViewModelBase
             }
 
             IsBusy = true;
-            await Task.Delay(2000);
             _httpClient.SetBearerToken(token);
             var response = await _httpClient.GetAsync("https://10.0.2.2:6001/identity");
             if(!response.IsSuccessStatusCode)
@@ -60,7 +59,7 @@ public partial class MainViewModel : ViewModelBase
             
             var doc = JsonDocument.Parse(await response.Content.ReadAsStringAsync()).RootElement;
             var formatted = JsonSerializer.Serialize(doc, new JsonSerializerOptions { WriteIndented = true });
-            await Shell.Current.DisplayAlert("User Claims", formatted, "ok");
+            await Shell.Current.DisplayAlert("Token Claims", formatted, "ok");
         }
         catch (Exception ex)
         {
@@ -69,7 +68,6 @@ public partial class MainViewModel : ViewModelBase
         finally
         {
             IsBusy = false;
-
         }
     }
 }

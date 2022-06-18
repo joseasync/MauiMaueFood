@@ -36,6 +36,7 @@ public static class MauiProgram
 		
 		builder.Services.AddSingleton<HttpClient>(GetInsecureHttpClient());
         builder.Services.AddTransient<WebAuthenticatorBrowser>();
+        
         builder.Services.AddTransient<OidcClient>(sp =>
 		new OidcClient(new OidcClientOptions
 		{

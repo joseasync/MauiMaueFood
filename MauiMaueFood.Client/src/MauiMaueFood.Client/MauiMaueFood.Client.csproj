@@ -73,10 +73,10 @@
 	</ItemGroup>
 	<ItemGroup>
 	  <Reference Include="Java.Interop">
-	    <HintPath>obj\Debug\net6.0-android\android\assets\Java.Interop.dll</HintPath>
+	    <HintPath>Properties/Java.Interop.dll</HintPath>
 	  </Reference>
 	  <Reference Include="Mono.Android">
-	    <HintPath>..\..\..\..\..\..\..\..\usr\local\share\dotnet\packs\Microsoft.Android.Ref.31\32.0.415\ref\net6.0\Mono.Android.dll</HintPath>
+	    <HintPath>..\..\..\..\..\..\..\..\..\..\usr\local\share\dotnet\packs\Microsoft.Android.Ref.31\32.0.415\ref\net6.0\Mono.Android.dll</HintPath>
 	  </Reference>
 	</ItemGroup>
 </Project>

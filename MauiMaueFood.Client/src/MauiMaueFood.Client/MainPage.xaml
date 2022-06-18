@@ -24,11 +24,7 @@
                 TextColor="Red"
                 IsEnabled="False"
                 HorizontalOptions="Center" />
-                        
-            <ActivityIndicator IsVisible="{Binding IsBusy}"
-                               IsRunning="{Binding IsBusy}"
-                               HorizontalOptions="FillAndExpand"
-                               VerticalOptions="CenterAndExpand" />
+            
                 <Label 
                 Text="Token:"
                 SemanticProperties.HeadingLevel="Level2"
@@ -45,6 +41,7 @@
                     HorizontalOptions="Center"
                     Command="{Binding CallApiCommand}"
                     BackgroundColor="{StaticResource Secondary}"
+                    IsEnabled="{Binding IsNotBusy}"
                     Text="Chamar API" TextColor="{StaticResource Primary}"/>
             
             <Button Margin="100,20,100,20" 

@@ -7,21 +7,27 @@ namespace MauiMaueFood.Client.ViewModels.Auth;
 public partial class LoginViewModel : ViewModelBase
 {
     protected readonly OidcClient _client;
-
-    public LoginViewModel(OidcClient client)
+    IConnectivity _connectivity;
+    public LoginViewModel(OidcClient client, IConnectivity connectivity)
     {
         _client = client;
+        _connectivity = connectivity;
     }
-    // For Firebase Video :D
-    // [ObservableProperty] private string login;
-    //
-    // [ObservableProperty] private string password;
-    
+
     [ICommand]
     async Task LoginAsync()
     {
+        if (IsBusy)
+            return;
+        
         try
         {
+            if(_connectivity.NetworkAccess is not NetworkAccess.Internet)
+            {
+                await Shell.Current.DisplayAlert("Internet Offline", "Check sua internet e tente novamente!", "Ok");
+                return;
+            }
+            
             var loginResult = await _client.LoginAsync(new LoginRequest());
             if (loginResult.IsError)
                 return;
@@ -32,10 +38,17 @@ public partial class LoginViewModel : ViewModelBase
                 {
                     {"Token", loginResult.AccessToken }
                 });
+            
+            // Application.Current.MainPage = new MainPage();
         }
         catch (Exception ex)
         {
             await Shell.Current.DisplayAlert("Error", ex.ToString(), "ok");
+        }
+        finally
+        {
+            IsBusy = false;
+
         }
     }
     

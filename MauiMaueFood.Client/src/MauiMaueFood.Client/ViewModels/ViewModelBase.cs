@@ -5,9 +5,9 @@ namespace MauiMaueFood.Client.ViewModels;
 
 public partial class ViewModelBase : ObservableObject
 {
-    [ObservableProperty]
     [AlsoNotifyChangeFor(nameof(IsNotBusy))]
-    private bool isBusy;
+    [ObservableProperty]
+    bool isBusy;
     
     public bool IsNotBusy => !IsBusy;
 }
